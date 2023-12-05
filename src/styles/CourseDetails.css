@@ -1,0 +1,55 @@
+
+
+.contain-heading {
+  text-align: center;
+}
+
+.courseDetailsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #9a3636;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: rgb(226, 236, 239);
+}
+
+.heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.detailsContent {
+  text-align: left;
+}
+
+.subHeading {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  
+}
+
+.syllabus {
+  margin-top: 20px;
+}
+
+.syllabus-title {
+  cursor: pointer;
+  font-size: 20px;
+  color: #021d05;
+}

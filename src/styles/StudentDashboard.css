@@ -1,0 +1,181 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.student-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(189, 173, 173, 0.22);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.course-card h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.course-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+  text-decoration: underline;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.course-thumbnail {
+  position: relative;
+  width: 97%;
+  max-height: 200px;
+  object-fit:contain;
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.course-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-details p {
+  margin-bottom: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.syllabus {
+  margin-top: 16px;
+}
+
+.syllabus h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.syllabus ul {
+  list-style-type: none;
+  padding: 0;
+  font-style: italic;
+}
+
+.syllabus li {
+  margin-bottom: 4px;
+}
+
+.progress-bar-container {
+  margin-top: 16px;
+  width: 100%;
+  height: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  position: relative;
+  animation: progress 2s ease-in-out;
+}
+
+.progress-bar.open {
+  background-color: #3498db;
+  width: 20%;
+  opacity: 0.8;
+}
+
+.progress-bar.closed {
+  background-color: #e74c3c;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.progress-bar.in-progress {
+  background-color: #f39c12;
+  width: 50%;
+  opacity: 0.8;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.enrollment-status {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.enrollment-status.open::before {
+  content: "Open";
+  color: #3498db;
+}
+
+.enrollment-status.closed::before {
+  content: "Closed";
+  color: #e74c3c;
+}
+
+.enrollment-status.in-progress::before {
+  content: "In Progress";
+  color: #f39c12;
+}
+
+.mark-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute; 
+  bottom: 16px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  opacity: 0.9;
+}
+
+
+
+.mark-button:hover {
+  background-color: #0ad214;
+  
+}
+
+.course-card.completed {
+  background-color: #ebf4f4;
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+
+.tick-mark {
+  color: #4caf50;
+  font-size: 40px;
+  margin-left: 5px;
+}
